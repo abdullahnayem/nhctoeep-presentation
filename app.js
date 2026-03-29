@@ -132,8 +132,11 @@ function createTrackChart() {
           backgroundColor: "rgba(0, 109, 119, 0.14)",
           borderColor: "#006d77",
           pointBackgroundColor: "#006d77",
+          borderWidth: 3,
           pointRadius: 4,
-          tension: 0.35,
+          pointHoverRadius: 6,
+          tension: 0.62,
+          cubicInterpolationMode: "monotone",
           fill: true
         },
         {
@@ -142,8 +145,11 @@ function createTrackChart() {
           backgroundColor: "rgba(226, 149, 120, 0.16)",
           borderColor: "#e29578",
           pointBackgroundColor: "#e29578",
+          borderWidth: 3,
           pointRadius: 4,
-          tension: 0.35,
+          pointHoverRadius: 6,
+          tension: 0.62,
+          cubicInterpolationMode: "monotone",
           fill: true
         }
       ]
@@ -153,6 +159,27 @@ function createTrackChart() {
       plugins: {
         legend: {
           position: "bottom"
+        },
+        datalabels: {
+          formatter: value => toBanglaDigits(value),
+          color: "#ffffff",
+          anchor: "end",
+          align: "bottom",
+          offset: 6,
+          clamp: true,
+          backgroundColor: context => context.dataset.borderColor,
+          borderRadius: 6,
+          padding: {
+            top: 3,
+            right: 6,
+            bottom: 3,
+            left: 6
+          },
+          font: {
+            family: "Space Grotesk, sans-serif",
+            weight: "700",
+            size: 10
+          }
         }
       },
       scales: {
