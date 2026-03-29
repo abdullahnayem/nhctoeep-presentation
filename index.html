@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NHCTOEEP | Technical Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Technical Briefing</p>
+        <h1>National Human Capital Transformation & Overseas Employment Expansion Project</h1>
+      </div>
+      <a class="btn" href="#slide-2">Start Presentation</a>
+    </header>
+
+    <main>
+      <section id="slide-1" class="slide reveal">
+        <h2>Project Snapshot</h2>
+        <p class="subtitle">সময়কাল: ২০২৬-২০৩১ | মোট প্রস্তাবিত ব্যয়: ১৫,৫০০ কোটি টাকা</p>
+
+        <div class="kpi-grid">
+          <article class="kpi-card">
+            <h3>মোট উপকারভোগী</h3>
+            <p class="value">৬০ লক্ষ</p>
+          </article>
+          <article class="kpi-card">
+            <h3>বিদেশে কর্মসংস্থান লক্ষ্য</h3>
+            <p class="value">২০ লক্ষ</p>
+          </article>
+          <article class="kpi-card">
+            <h3>দেশীয় উদ্যোক্তা সৃষ্টি</h3>
+            <p class="value">১০ লক্ষ</p>
+          </article>
+          <article class="kpi-card">
+            <h3>গ্রামীণ দারিদ্র</h3>
+            <p class="value">২৫% হ্রাস</p>
+          </article>
+         
+          <article class="kpi-card">
+            <h3>রেমিট্যান্স বৃদ্ধি লক্ষ্য</h3>
+            <p class="value">৪০%</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="slide-2" class="slide reveal">
+        <h2>Beneficiary Composition</h2>
+        <p class="subtitle">প্রশিক্ষণ লক্ষ্যভিত্তিক উপকারভোগী বণ্টন (লক্ষ)</p>
+        <div class="chart-wrap"><canvas id="beneficiaryChart"></canvas></div>
+      </section>
+
+      <section id="slide-3" class="slide reveal two-col">
+        <div>
+          <h2>Budget Allocation</h2>
+          <p class="subtitle">প্রকল্পের খাতভিত্তিক বরাদ্দ (কোটি টাকা)</p>
+          <div class="chart-wrap compact"><canvas id="budgetChart"></canvas></div>
+        </div>
+        <div class="budget-list card">
+          <h3>Key Budget Heads</h3>
+          <ul>
+            <li>অবকাঠামো: ৬,০০০</li>
+            <li>মাদ্রাসা সংযুক্তি: ১,৫০০</li>
+            <li>গ্রামীণ কর্মসংস্থান: ২,৫০০</li>
+            <li>আন্তর্জাতিক সংযোগ: ২,০০০</li>
+            <li>উদ্যোক্তা তহবিল: ২,৫০০</li>
+            <li>ডিজিটাল সিস্টেম: ১,০০০</li>
+            <li>প্রশাসনিক ব্যয়: ১,০০০</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="slide-4" class="slide reveal">
+        <h2>Implementation Timeline</h2>
+        <p class="subtitle">৫ বছরের phased rollout plan</p>
+        <div class="timeline">
+          <article>
+            <span>Year 1</span>
+            <p>অবকাঠামো ও বাজার গবেষণা, কারিকুলাম আপগ্রেড</p>
+          </article>
+          <article>
+            <span>Year 2</span>
+            <p>প্রশিক্ষণ শুরু, ডিজিটাল রিক্রুটমেন্ট প্ল্যাটফর্ম চালু</p>
+          </article>
+          <article>
+            <span>Year 3</span>
+            <p>বিদেশে প্লেসমেন্ট স্কেল-আপ, দক্ষ শ্রম রপ্তানি বৃদ্ধি</p>
+          </article>
+          <article>
+            <span>Year 4</span>
+            <p>উদ্যোক্তা সম্প্রসারণ, নতুন দেশ সংযুক্তি</p>
+          </article>
+          <article>
+            <span>Year 5</span>
+            <p>ফাইনাল মূল্যায়ন ও nationwide expansion</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="slide-5" class="slide reveal two-col">
+        <div>
+          <h2>Target Employment Tracks</h2>
+          <p class="subtitle">দেশীয় বনাম বিদেশি খাতভিত্তিক অগ্রাধিকার</p>
+          <div class="chart-wrap compact"><canvas id="trackChart"></canvas></div>
+        </div>
+        <div>
+          <div class="chart-wrap compact"><canvas id="countryChart"></canvas></div>
+        </div>
+      </section>
+
+      <section id="slide-6" class="slide reveal">
+        <h2>Risk & Mitigation Dashboard</h2>
+        <div class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>সমস্যা</th>
+                <th>প্রভাব</th>
+                <th>সমাধান</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>প্রতারণা</td>
+                <td>বিদেশগামী কর্মীর আর্থিক ক্ষতি</td>
+                <td>কঠোর লাইসেন্সিং ও ডিজিটাল অভিযোগ সিস্টেম</td>
+              </tr>
+              <tr>
+                <td>ভাষাজ্ঞান কম</td>
+                <td>কম বেতন, চাকরির ঝুঁকি</td>
+                <td>বাধ্যতামূলক ভাষা প্রশিক্ষণ</td>
+              </tr>
+              <tr>
+                <td>অদক্ষ শ্রমিক</td>
+                <td>আন্তর্জাতিক প্রতিযোগিতায় পিছিয়ে পড়া</td>
+                <td>Skill certification ও assessment center</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <nav class="floating-nav" aria-label="Slide navigation">
+      <a href="#slide-1">01</a>
+      <a href="#slide-2">02</a>
+      <a href="#slide-3">03</a>
+      <a href="#slide-4">04</a>
+      <a href="#slide-5">05</a>
+      <a href="#slide-6">06</a>
+    </nav>
+  </body>
+</html>
