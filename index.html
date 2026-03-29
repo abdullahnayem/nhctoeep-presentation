@@ -152,6 +152,363 @@
           </table>
         </div>
       </section>
+
+      <section id="slide-7" class="slide reveal">
+        <h2>Technology Stack</h2>
+        <p class="subtitle">Proposed digital platform architecture grouped by experience, application, service, data, and operations</p>
+        <div class="stack-hero">
+          <div class="stack-hero-copy">
+            <h3>Unified Platform Blueprint</h3>
+            <p>One integrated ecosystem for citizen-facing web, mobile service delivery, secure APIs, enterprise backend, and operational reliability.</p>
+          </div>
+          <div class="stack-hero-tags" aria-label="Technology stack highlights">
+            <span>Web + App</span>
+            <span>Secure API</span>
+            <span>SQL Data</span>
+            <span>DevOps Ready</span>
+          </div>
+        </div>
+        <div class="stack-architecture">
+          <article class="stack-layer layer-experience">
+            <div class="stack-layer-title">
+              <span class="stack-layer-id">01</span>
+              <div>
+                <h3>Experience Layer</h3>
+                <p>User-facing platforms for citizens, staff, and partners</p>
+              </div>
+            </div>
+            <div class="stack-layer-grid">
+              <div class="stack-module">
+                <h4>Frontend (Web)</h4>
+                <p>Next.js, TypeScript, Tailwind CSS / CSS Modules</p>
+              </div>
+              <div class="stack-module">
+                <h4>Mobile App</h4>
+                <p>React Native (Expo)</p>
+              </div>
+            </div>
+          </article>
+          <article class="stack-layer layer-application">
+            <div class="stack-layer-title">
+              <span class="stack-layer-id">02</span>
+              <div>
+                <h3>Application Layer</h3>
+                <p>State handling and secure communication between client and services</p>
+              </div>
+            </div>
+            <div class="stack-layer-grid">
+              <div class="stack-module">
+                <h4>State Management</h4>
+                <p>Redux / Context API</p>
+              </div>
+              <div class="stack-module">
+                <h4>API Communication</h4>
+                <p>REST API, Axios / Fetch</p>
+              </div>
+              <div class="stack-module">
+                <h4>Authentication & Security</h4>
+                <p>JWT Token, HTTPS / SSL</p>
+              </div>
+            </div>
+          </article>
+          <article class="stack-layer layer-service">
+            <div class="stack-layer-title">
+              <span class="stack-layer-id">03</span>
+              <div>
+                <h3>Service Layer</h3>
+                <p>Core business services, integrations, and transactional components</p>
+              </div>
+            </div>
+            <div class="stack-layer-grid">
+              <div class="stack-module">
+                <h4>Backend</h4>
+                <p>.NET Core Web API, Entity Framework Core, Dapper</p>
+              </div>
+              <div class="stack-module">
+                <h4>File Storage</h4>
+                <p>Local Storage / AWS S3 / Cloud Storage</p>
+              </div>
+              <div class="stack-module">
+                <h4>Payment Integration</h4>
+                <p>SSLCommerz / Stripe</p>
+              </div>
+            </div>
+          </article>
+          <article class="stack-layer layer-data">
+            <div class="stack-layer-title">
+              <span class="stack-layer-id">04</span>
+              <div>
+                <h3>Data Layer</h3>
+                <p>Reliable structured storage for beneficiary, workflow, and audit data</p>
+              </div>
+            </div>
+            <div class="stack-layer-grid single">
+              <div class="stack-module">
+                <h4>Database</h4>
+                <p>SQL Server</p>
+              </div>
+            </div>
+          </article>
+          <article class="stack-layer layer-ops">
+            <div class="stack-layer-title">
+              <span class="stack-layer-id">05</span>
+              <div>
+                <h3>Operations Layer</h3>
+                <p>Deployment, collaboration, monitoring, and quality assurance</p>
+              </div>
+            </div>
+            <div class="stack-layer-grid">
+              <div class="stack-module">
+                <h4>Hosting & Deployment</h4>
+                <p>Vercel, IIS</p>
+              </div>
+              <div class="stack-module">
+                <h4>Version Control & CI/CD</h4>
+                <p>Git, GitHub / GitLab / Bitbucket, GitHub Actions / GitLab CI</p>
+              </div>
+              <div class="stack-module">
+                <h4>Logging & Monitoring</h4>
+                <p>Serilog / NLog, Firebase crash tracking</p>
+              </div>
+              <div class="stack-module">
+                <h4>Testing</h4>
+                <p>Unit Testing with xUnit / Jest</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="slide-8" class="slide reveal">
+        <h2>Software Flow Chart</h2>
+        <p class="subtitle">NHCTOEEP Platform Flow (Clean decision-based layout)</p>
+        <div class="flow-board" role="img" aria-label="NHCTOEEP software flow with intake, eligibility decision, training, job matching, placement and feedback loop">
+          <svg class="flow-svg" viewBox="0 0 980 650" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+                <path d="M0,0 L8,4 L0,8 z" fill="#1e2430" />
+              </marker>
+            </defs>
+
+            <rect x="20" y="24" width="300" height="560" rx="24" fill="#f8fbfc" stroke="#d7e5ea" stroke-width="1.5" />
+            <rect x="340" y="24" width="270" height="560" rx="24" fill="#f7f8fc" stroke="#dbe1ee" stroke-width="1.5" />
+            <rect x="630" y="24" width="320" height="560" rx="24" fill="#f7fbfb" stroke="#d7e8e5" stroke-width="1.5" />
+
+            <text x="44" y="62" class="svg-panel-title">Intake & Validation</text>
+            <text x="475" y="62" text-anchor="middle" class="svg-panel-title">Decision Engine</text>
+            <text x="654" y="62" class="svg-panel-title">Delivery & Feedback</text>
+            <rect x="74" y="118" width="190" height="60" rx="12" fill="#f7f3ea" stroke="#50697a" stroke-width="1.6" />
+            <text x="169" y="145" text-anchor="middle" class="svg-label">
+              <tspan x="169" dy="0">User</tspan>
+              <tspan x="169" dy="18">Registration</tspan>
+            </text>
+
+            <rect x="74" y="220" width="190" height="60" rx="12" fill="#eef2fb" stroke="#50697a" stroke-width="1.6" />
+            <text x="169" y="247" text-anchor="middle" class="svg-label">
+              <tspan x="169" dy="0">NID & Data</tspan>
+              <tspan x="169" dy="18">Verification</tspan>
+            </text>
+
+            <rect x="74" y="322" width="190" height="60" rx="12" fill="#eef2fb" stroke="#50697a" stroke-width="1.6" />
+            <text x="169" y="349" text-anchor="middle" class="svg-label">
+              <tspan x="169" dy="0">Profile +</tspan>
+              <tspan x="169" dy="18">Skill Data</tspan>
+            </text>
+
+            <polygon points="405,250 475,180 545,250 475,320" fill="#f1eefb" stroke="#50697a" stroke-width="1.6" />
+            <text x="475" y="242" text-anchor="middle" class="svg-label">
+              <tspan x="475" dy="0">Eligibility</tspan>
+              <tspan x="475" dy="18">Check</tspan>
+            </text>
+
+            <rect x="383" y="350" width="184" height="60" rx="12" fill="#edf7f5" stroke="#50697a" stroke-width="1.6" />
+            <text x="475" y="377" text-anchor="middle" class="svg-label">
+              <tspan x="475" dy="0">Training</tspan>
+              <tspan x="475" dy="18">Enrollment</tspan>
+            </text>
+
+            <rect x="383" y="452" width="184" height="60" rx="12" fill="#edf7f5" stroke="#50697a" stroke-width="1.6" />
+            <text x="475" y="479" text-anchor="middle" class="svg-label">
+              <tspan x="475" dy="0">Assessment &</tspan>
+              <tspan x="475" dy="18">Certification</tspan>
+            </text>
+
+            <rect x="692" y="118" width="196" height="60" rx="12" fill="#eef6f7" stroke="#50697a" stroke-width="1.6" />
+            <text x="790" y="145" text-anchor="middle" class="svg-label">
+              <tspan x="790" dy="0">Job Matching</tspan>
+              <tspan x="790" dy="18">Engine</tspan>
+            </text>
+
+            <rect x="692" y="220" width="196" height="60" rx="12" fill="#eef6f7" stroke="#50697a" stroke-width="1.6" />
+            <text x="790" y="247" text-anchor="middle" class="svg-label">
+              <tspan x="790" dy="0">Placement</tspan>
+              <tspan x="790" dy="18">Review</tspan>
+            </text>
+
+            <rect x="692" y="322" width="196" height="60" rx="12" fill="#edf7f5" stroke="#50697a" stroke-width="1.6" />
+            <text x="790" y="349" text-anchor="middle" class="svg-label">
+              <tspan x="790" dy="0">Placement /</tspan>
+              <tspan x="790" dy="18">Entrepreneurship</tspan>
+            </text>
+
+            <rect x="692" y="424" width="196" height="60" rx="12" fill="#f4f6f0" stroke="#50697a" stroke-width="1.6" />
+            <text x="790" y="451" text-anchor="middle" class="svg-label">
+              <tspan x="790" dy="0">Monitoring +</tspan>
+              <tspan x="790" dy="18">Complaint Support</tspan>
+            </text>
+
+      
+
+            <line x1="169" y1="178" x2="169" y2="220" class="svg-line" marker-end="url(#arrow)" />
+            <line x1="169" y1="280" x2="169" y2="322" class="svg-line" marker-end="url(#arrow)" />
+            <line x1="264" y1="250" x2="405" y2="250" class="svg-line" marker-end="url(#arrow)" />
+
+            <line x1="475" y1="320" x2="475" y2="350" class="svg-line" marker-end="url(#arrow)" />
+            <line x1="475" y1="410" x2="475" y2="452" class="svg-line" marker-end="url(#arrow)" />
+            <path d="M567 482 L650 482 L650 148 L692 148" class="svg-line" marker-end="url(#arrow)" fill="none" />
+            <line x1="790" y1="178" x2="790" y2="220" class="svg-line" marker-end="url(#arrow)" />
+            <line x1="790" y1="280" x2="790" y2="322" class="svg-line" marker-end="url(#arrow)" />
+            <line x1="790" y1="382" x2="790" y2="424" class="svg-line" marker-end="url(#arrow)" />
+          </svg>
+        </div>
+      </section>
+
+      <section id="slide-9" class="slide reveal">
+        <h2>Operational Workflow</h2>
+        <p class="subtitle">End-to-end service pipeline for beneficiaries</p>
+        <div class="workflow-head">
+          <span>Auto Validation</span>
+          <span>Human Review</span>
+          <span>Continuous Feedback Loop</span>
+        </div>
+        <p class="workflow-note">
+          Note: <strong>Auto Validation = Speed</strong>, <strong>Human Review = Quality</strong>,
+          <strong>Continuous Feedback Loop = Continuous Improvement</strong>.
+        </p>
+        <div class="workflow-board">
+          <div class="workflow-lane lane-auto">
+            <div class="workflow-lane-label">
+              <span class="lane-id">Lane 01</span>
+              <h3>Auto Validation</h3>
+              <p>Fast intake, fraud screening, and rules-based eligibility checks.</p>
+            </div>
+            <div class="workflow-lane-track">
+              <article class="workflow-step">
+                <div class="workflow-meta">
+                  <span class="step-id">Step 01</span>
+                  <span class="owner-badge">System</span>
+                </div>
+                <h3>Onboarding</h3>
+                <p>Digital registration, profile completion, document intake, and fraud screening.</p>
+                <div class="workflow-tags">
+                  <span>eKYC</span>
+                  <span>Document Intake</span>
+                  <span>Risk Flags</span>
+                </div>
+                <p class="step-kpi">SLA <strong>&lt; 10 min</strong></p>
+              </article>
+              <div class="workflow-arrow">→</div>
+              <article class="workflow-step">
+                <div class="workflow-meta">
+                  <span class="step-id">Step 02</span>
+                  <span class="owner-badge">Rules Engine</span>
+                </div>
+                <h3>Verification</h3>
+                <p>NID validation, data matching, eligibility scoring, and baseline skill profiling.</p>
+                <div class="workflow-tags">
+                  <span>NID Check</span>
+                  <span>Scoring</span>
+                  <span>Track Hint</span>
+                </div>
+                <p class="step-kpi">Accuracy <strong>98%</strong></p>
+              </article>
+            </div>
+          </div>
+          <div class="workflow-lane lane-human">
+            <div class="workflow-lane-label">
+              <span class="lane-id">Lane 02</span>
+              <h3>Human Review</h3>
+              <p>Decision control, training assignment, and job or enterprise pathways.</p>
+            </div>
+            <div class="workflow-lane-track">
+              <article class="workflow-gate">
+                <span class="gate-id">Decision Point</span>
+                <h3>Eligibility Gate</h3>
+                <div class="gate-branches">
+                  <p class="workflow-branch success">Eligible → Training Track</p>
+                  <p class="workflow-branch danger">Not Eligible → Re-profile & Data Correction</p>
+                </div>
+              </article>
+              <div class="workflow-arrow">→</div>
+              <article class="workflow-step">
+                <div class="workflow-meta">
+                  <span class="step-id">Step 03</span>
+                  <span class="owner-badge">Training Partner</span>
+                </div>
+                <h3>Training & Assessment</h3>
+                <p>Track assignment, attendance monitoring, assessment, and certification readiness.</p>
+                <div class="workflow-tags">
+                  <span>Track Assignment</span>
+                  <span>Assessment</span>
+                  <span>Certification</span>
+                </div>
+                <p class="step-kpi">Completion <strong>85%</strong></p>
+              </article>
+              <div class="workflow-arrow">→</div>
+              <article class="workflow-step">
+                <div class="workflow-meta">
+                  <span class="step-id">Step 04</span>
+                  <span class="owner-badge">Employer Cell</span>
+                </div>
+                <h3>Placement / Startup Support</h3>
+                <p>Job matching for local or overseas pathways, plus entrepreneurship advisory support.</p>
+                <div class="workflow-tags">
+                  <span>Local Jobs</span>
+                  <span>Overseas Jobs</span>
+                  <span>Enterprise</span>
+                </div>
+                <p class="step-kpi">Placement Goal <strong>20L</strong></p>
+              </article>
+            </div>
+          </div>
+          <div class="workflow-lane lane-feedback">
+            <div class="workflow-lane-label">
+              <span class="lane-id">Lane 03</span>
+              <h3>Feedback Loop</h3>
+              <p>Retention tracking, grievance response, and continuous service refinement.</p>
+            </div>
+            <div class="workflow-lane-track">
+              <article class="workflow-step highlight">
+                <div class="workflow-meta">
+                  <span class="step-id">Step 05</span>
+                  <span class="owner-badge">Support Desk</span>
+                </div>
+                <h3>Monitoring & Feedback</h3>
+                <p>Post-placement tracking, grievance handling, employer feedback, and retention monitoring.</p>
+                <div class="workflow-tags">
+                  <span>Retention</span>
+                  <span>Complaints</span>
+                  <span>Employer Voice</span>
+                </div>
+                <p class="step-kpi">Support Cycle <strong>Always On</strong></p>
+              </article>
+              <div class="workflow-arrow loop-arrow">↺</div>
+              <article class="workflow-impact">
+                <span class="impact-id">Loop Back</span>
+                <h3>Continuous Improvement</h3>
+                <p>Feedback updates verification rules, training content, and employer matching quality.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="workflow-metrics" aria-label="Operational workflow KPI strip">
+          <span>Registration &lt; 10 min</span>
+          <span>Verification 98%</span>
+          <span>Training Completion 85%</span>
+          <span>Placement Goal 20L</span>
+          <span>Retention + Support Loop</span>
+        </div>
+      </section>
     </main>
 
     <nav class="floating-nav" aria-label="Slide navigation">
@@ -161,6 +518,9 @@
       <a href="#slide-4">04</a>
       <a href="#slide-5">05</a>
       <a href="#slide-6">06</a>
+      <a href="#slide-7">07</a>
+      <a href="#slide-8">08</a>
+      <a href="#slide-9">09</a>
     </nav>
   </body>
 </html>

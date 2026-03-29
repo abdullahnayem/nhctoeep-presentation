@@ -248,9 +248,558 @@ th {
   transform: translateY(0);
 }
 
+.stack-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) auto;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px 18px;
+  border: 1px solid #dce7ed;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f9fcfe, #f3f8fb);
+}
+
+.stack-hero-copy h3 {
+  font-size: 1rem;
+  color: #21415b;
+}
+
+.stack-hero-copy p {
+  margin: 8px 0 0;
+  color: #566b7c;
+  line-height: 1.6;
+}
+
+.stack-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 8px;
+}
+
+.stack-hero-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #d8e4eb;
+  color: #35566c;
+  font-size: 0.76rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.stack-architecture {
+  display: grid;
+  gap: 12px;
+}
+
+.stack-layer {
+  border: 1px solid #dce5eb;
+  border-radius: 18px;
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0 8px 18px rgba(12, 27, 44, 0.04);
+}
+
+.layer-experience {
+  background: linear-gradient(180deg, #fbfdff, #f7fbfd);
+}
+
+.layer-application {
+  background: linear-gradient(180deg, #fcfcff, #f8f9fd);
+}
+
+.layer-service {
+  background: linear-gradient(180deg, #fbfefd, #f7fcfb);
+}
+
+.layer-data {
+  background: linear-gradient(180deg, #fbfcff, #f8fafd);
+}
+
+.layer-ops {
+  background: linear-gradient(180deg, #fcfdfb, #f8faf7);
+}
+
+.stack-layer-title {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 12px;
+}
+
+.stack-layer-id {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #d8e4eb;
+  background: #fff;
+  color: #1f4b66;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.stack-layer-title h3 {
+  font-size: 1rem;
+  color: #1f405b;
+}
+
+.stack-layer-title p {
+  margin: 4px 0 0;
+  color: #5c6f7f;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.stack-layer-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.stack-layer-grid.single {
+  grid-template-columns: 1fr;
+}
+
+.stack-module {
+  border: 1px solid #e2e9ee;
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.stack-module h4 {
+  margin: 0 0 8px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.9rem;
+  color: #27445b;
+}
+
+.stack-module p {
+  margin: 0;
+  color: #566b7b;
+  line-height: 1.55;
+  font-size: 0.9rem;
+}
+
+.flow-board {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 12px;
+  background: linear-gradient(180deg, #fbfdff, #f4f8fb);
+  overflow-x: auto;
+}
+
+.flow-svg {
+  width: 100%;
+  min-width: 920px;
+  height: auto;
+  display: block;
+}
+
+.svg-line {
+  stroke: #5d7687;
+  stroke-width: 1.8;
+}
+
+.svg-label {
+  fill: #22394b;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.svg-note {
+  fill: #6a7f8f;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.svg-panel-title {
+  fill: #173650;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.svg-line-dashed {
+  stroke-dasharray: none;
+}
+
+.svg-loop-label {
+  fill: #5f7f87;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.workflow-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.workflow-head span {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #245170;
+  border: 1px solid #cbdee8;
+  background: #f7fbff;
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.workflow-note {
+  margin: 0 0 14px;
+  padding: 10px 12px;
+  border: 1px dashed #c5d9e5;
+  border-radius: 10px;
+  background: #f8fcff;
+  color: #36536a;
+  font-size: 0.9rem;
+}
+
+.workflow-note strong {
+  color: #153f5e;
+}
+
+.workflow-board {
+  display: grid;
+  gap: 14px;
+}
+
+.workflow-lane {
+  position: relative;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 16px;
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid #d7e4ea;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 252, 0.94));
+  overflow: hidden;
+}
+
+.workflow-lane::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  border-radius: 999px;
+}
+
+.lane-auto::before {
+  background: linear-gradient(180deg, #f3b853, #f6d38e);
+}
+
+.lane-human::before {
+  background: linear-gradient(180deg, #c384d8, #e0b0ed);
+}
+
+.lane-feedback::before {
+  background: linear-gradient(180deg, #78c1de, #82c7c5);
+}
+
+.workflow-lane-label {
+  display: grid;
+  align-content: center;
+  gap: 6px;
+  padding: 6px 14px 6px 10px;
+  border-right: 1px dashed #cfe0e8;
+}
+
+.workflow-lane-label h3 {
+  font-size: 1rem;
+  color: #163651;
+}
+
+.workflow-lane-label p {
+  margin: 0;
+  color: #53687b;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.lane-id,
+.gate-id,
+.impact-id {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.lane-id {
+  color: #245170;
+  border: 1px solid #cbdee8;
+  background: #f7fbff;
+}
+
+.gate-id {
+  color: #7b2f63;
+  background: #fff0fa;
+  border: 1px solid #ebc5df;
+}
+
+.impact-id {
+  color: #145967;
+  background: #eef9fc;
+  border: 1px solid #cae8ef;
+}
+
+.workflow-lane-track {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  min-width: 0;
+}
+
+.workflow-step {
+  flex: 1 1 0;
+  background: linear-gradient(180deg, #ffffff, #f9fcff);
+  border: 1px solid #cfe0e8;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 8px 18px rgba(8, 45, 71, 0.08);
+}
+
+.workflow-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.workflow-step .step-id {
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #0c6e79;
+  background: #ecf7f9;
+  border: 1px solid #c7e4e8;
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.workflow-step h3 {
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+  color: #15344f;
+}
+
+.workflow-step p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4a6074;
+  line-height: 1.45;
+}
+
+.owner-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 3px 9px;
+  background: #f4f7fa;
+  border: 1px solid #dbe5ec;
+  color: #496174;
+  font-size: 0.72rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.workflow-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.workflow-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #f3f8fb;
+  border: 1px solid #dbe8ee;
+  color: #486174;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.workflow-step .step-kpi {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #0c6e79;
+  font-weight: 700;
+}
+
+.workflow-step .step-kpi strong {
+  color: #123e59;
+}
+
+.workflow-gate {
+  flex: 0.9 1 0;
+  border: 2px dashed #c384d8;
+  border-radius: 16px;
+  padding: 14px;
+  background: linear-gradient(180deg, #fff6ff, #f9ecfb);
+  display: grid;
+  align-content: center;
+  gap: 10px;
+}
+
+.workflow-gate h3 {
+  margin: 0;
+  font-size: 0.98rem;
+  color: #6d2f7b;
+}
+
+.gate-branches {
+  display: grid;
+  gap: 8px;
+}
+
+.workflow-branch {
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.workflow-branch.success {
+  color: #15584b;
+  background: #eefaf4;
+  border-color: #c7ead7;
+}
+
+.workflow-branch.danger {
+  color: #7a3a58;
+  background: #fff2f8;
+  border-color: #f0cade;
+}
+
+.workflow-step.highlight {
+  border-color: #95d6c5;
+  background: linear-gradient(180deg, #f1fbf7, #e7f8f1);
+}
+
+.workflow-impact {
+  flex: 0.9 1 0;
+  border-radius: 16px;
+  padding: 14px;
+  background: linear-gradient(180deg, #f2fbff, #ecf8fb);
+  border: 1px solid #cce5ec;
+  box-shadow: 0 8px 18px rgba(8, 45, 71, 0.06);
+}
+
+.workflow-impact h3 {
+  margin: 8px 0 8px;
+  font-size: 0.98rem;
+  color: #144a57;
+}
+
+.workflow-impact p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #456675;
+  line-height: 1.5;
+}
+
+.workflow-arrow {
+  display: grid;
+  place-items: center;
+  color: #0b7a85;
+  font-size: 1.25rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  flex: 0 0 24px;
+}
+
+.workflow-arrow.loop-arrow {
+  color: #15707b;
+  font-size: 1.5rem;
+}
+
+.workflow-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.workflow-metrics span {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid #d8e4ea;
+  background: #fff;
+  color: #24455f;
+  font-size: 0.78rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
 @media (max-width: 1060px) {
   .two-col {
     grid-template-columns: 1fr;
+  }
+
+  .stack-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .stack-hero-tags {
+    justify-content: start;
+  }
+
+  .workflow-lane {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .workflow-note {
+    font-size: 0.84rem;
+  }
+
+  .workflow-lane-label {
+    padding: 0 0 10px;
+    border-right: 0;
+    border-bottom: 1px dashed #cfe0e8;
+  }
+
+  .workflow-lane-track {
+    flex-direction: column;
+  }
+
+  .workflow-arrow {
+    transform: rotate(90deg);
+    height: 20px;
+    justify-self: center;
+    flex-basis: 20px;
   }
 }
 
@@ -321,5 +870,13 @@ th {
     width: 32px;
     height: 32px;
     font-size: 0.75rem;
+  }
+
+  .flow-board {
+    padding: 8px;
+  }
+
+  .flow-svg {
+    min-width: 860px;
   }
 }
